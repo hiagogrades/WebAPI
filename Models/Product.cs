@@ -1,6 +1,6 @@
 //Importando a biblioteca DataAnnotations
 using System.ComponentModel.DataAnnotations;
-using Category.Models;
+using WebAPI.Models;
 
 namespace WebAPI.Models
 {
