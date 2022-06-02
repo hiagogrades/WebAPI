@@ -1,4 +1,7 @@
+using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.Threading.Tasks;
 
 namespace WebAPI.Models
 {
@@ -12,5 +15,9 @@ namespace WebAPI.Models
         [MinLength(3, ErrorMessage = "Este campo deve ter no mínimo 3 caracteres")]
         public string Title { get; set; }
 
+        internal Task<List<object>> ToListAsync()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

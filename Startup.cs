@@ -57,13 +57,11 @@ namespace WebAPI
 
             app.UseAuthorization();
 
-            /*
-            //Comentando a rota
-                        app.UseEndpoints(endpoints =>
-                        {
-                            endpoints.MapControllers();
-                        });
-            */
+            app.UseEndpoints(endpoints =>
+            {
+                endpoints.MapControllers();
+            });
+
         }
     }
 }
